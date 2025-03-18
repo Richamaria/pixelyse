@@ -1,0 +1,153 @@
+/* src/components/Dashboard.css */
+
+.dashboard {
+    display: flex; /* Flexbox for layout */
+    justify-content: flex-start; /* Align content to the start (left) */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    min-height: 100vh;
+    transition: background-color 0.3s ease-in-out;
+
+    /* Background image */
+    background-image: url('webimage2.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding-right: 50px; /* Space between sidebar and the content */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #00796b;
+    margin-bottom: 100px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Take full available space */
+}
+
+.upload-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.upload-container input[type="file"] {
+    padding: 10px 15px;
+    background-color: #236da1;
+    color: white;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    display: block;
+    margin: 10px auto;
+}
+
+.upload-container input[type="file"]:hover {
+    background-color: #2ac2ca;
+}
+
+.detect-forgery-button {
+    margin-top: 10px;
+    padding: 7px 15px;
+    background-color: #236da1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.detect-forgery-button:hover {
+    background-color: #12b9c1;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Image Alignment Section */
+.align-images-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.align-images-button {
+    padding: 5px 10px;
+    background-color: #236da1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out;
+    display: block;
+    margin: 10px auto;
+}
+
+.align-images-button:hover {
+    background-color: #12b9c1;
+}
+
+canvas {
+    border: 2px solid black;
+    margin-top: 20px;
+    cursor: crosshair;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Selected ROI Styling */
+.roi-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.roi-preview h3 {
+    font-size: 1.2rem;
+    color: #236da1;
+    margin-bottom: 10px;
+}
+
+.roi-preview img {
+    border: 2px solid blue;
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.roi-preview img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

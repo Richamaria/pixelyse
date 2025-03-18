@@ -1,0 +1,79 @@
+/* src/components/SignUp.css */
+.signup-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensures full viewport coverage */
+    background-image: url('webimage3.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Styling */
+.signup-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.signup-header h1 {
+    font-size: 32px;
+    color: #249fa5;
+    margin-bottom: 5px;
+}
+
+.signup-header p {
+    font-size: 16px;
+    color: whitesmoke;
+    margin-top: 0;
+}
+
+/* Form Styling */
+.signup-content-section {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px; /* Reduce gap between form fields */
+    padding: 20px;
+}
+
+.signup-form label {
+    font-size: 16px;
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+.signup-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup-form button {
+    padding: 10px;
+    background-color: #249fa5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #1a7c80;
+}

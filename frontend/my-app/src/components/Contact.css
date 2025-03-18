@@ -1,0 +1,81 @@
+/* src/components/Contact.css */
+.contact-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensures it covers the full viewport height */
+    background-image: url('webimage3.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the full container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+    display: grid; /* Enables flexbox for alignment */
+    align-items: center; /* Vertically centers the content */
+    justify-content: flex-end;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 0.5%; /* Adds padding to push content slightly left from the page edge */
+}
+
+/* header styling */
+.contact-header {
+    text-align: left; /* Aligns text within the header to the left */
+    max-width: 500px; /* Limits width of the header content */
+    padding-left: 70px;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+    margin-top: 0;
+    color: #249fa5;
+}
+
+.contact-header p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+/* Content section styling */
+.contact-content-section {
+    max-width: 500px; /* Aligns with the header width */
+    text-align: left; /* Justifies the text for even edges */
+    background-color: transparent; /* Optional: semi-transparent background for readability */
+    padding: 20px;
+    margin: 0 auto; /* Centers content within the grid area */
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.contact-content-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #249fa5;
+}
+
+.contact-content-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.contact-info {
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.contact-info a {
+    color: #249fa5;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-subtext {
+    margin-top:0 ; /* Adjust spacing if needed */
+    font-size: 16px;
+    color: whitesmoke;
+}
